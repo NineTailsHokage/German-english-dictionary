@@ -3,17 +3,13 @@
 // Constructor
 Dictionary::Dictionary() {
     loadFromFile("dictionary.dat"); // Load existing words from file
-    addWord("Haus", "House");
-    addWord("Auto", "Car");
-    addWord("Buch", "Book");
-    addWord("Tisch", "Table");
-    addWord("Stuhl", "Chair");
+   
 }
 
 // Add a new word to the dictionary
 void Dictionary::addWord(const std::string& german, const std::string& english) {
     words.push_back(std::make_pair(german, english));
-    std::cout << "Added: " << german << " -> " << english << std::endl;
+   
 }
 
 // Delete a word from the dictionary
