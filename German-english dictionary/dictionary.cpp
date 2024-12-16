@@ -3,6 +3,11 @@
 // Constructor
 Dictionary::Dictionary() {
     loadFromFile("dictionary.dat"); // Load existing words from file
+    addWord("Haus", "House");
+    addWord("Auto", "Car");
+    addWord("Buch", "Book");
+    addWord("Tisch", "Table");
+    addWord("Stuhl", "Chair");
 }
 
 // Add a new word to the dictionary
